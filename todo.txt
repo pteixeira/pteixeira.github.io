@@ -1,0 +1,79 @@
+ToDo List:
+
+- Programações
+	- Criar isos;
+	- Guardar isos (já tenho tabela com detalhes, falta guardar a imagem em si);
+	- Rever informação do Miguel Costa - Thincrust, JeOS, etc;
+	- Criar algoritmo de indexação;
+	- Traçar benchmarks:
+		- Criação das isos;
+		- Recuperação das isos;
+		- Eficácia do algoritmo de indexação
+	- Criar Views decentes;
+	- EFECTUAR ELICITAÇÃO DE REQUISITOS PARA A INTERFACE WEB!
+	- OPT: Criar parser para templates de imagens?
+
+- Escrita
+	- Introdução;
+	- Porquê o tema?
+	- Mudanças do tema - Integração com OpenStack;
+	 - Falar de virtualização;
+	 - Tipos de imagens (ami, qemu, etc);7
+	 - Arquitecturas dos sistemas;
+	 - OpenStack VS OpenNebula;
+	 - Diferenças na contextualização das imagens Stack VS Nebula;
+	 - Decisões tomadas;
+	 - Implementação;
+	 - Benchmarks;
+	 - Resultados obtidos;
+	 - Conclusões.
+	 
+Questões:
+	- Como é que o OpenStack cria as imagens?
+	- Como é que o OpenStack guarda as imagens?
+	- Como é que o OpenStack contextualiza as imagens?
+	
+O que é que o sistema tem de fazer?
+	- Criar e guardar ISOs. Gerir a disponibilização, de acordo com o que o utilizador quiser.
+
+O que é que o sistema faz?
+	- Lista ISOs;
+	- Visualiza detalhes das ISOs;
+	- Mostra as Tags das ISOs (para pesquisa de ISOs relevantes).
+
+O que falta fazer?
+	- Adicionar ISOs;
+	- Criar ISOs;
+	- Talvez ler templates de imagens?
+	- Depende da maneira de criação de imagens da Stack.
+	
+	
+	
+Planeamento:
+
+Quinta e Sexta:
+	- Actualizar Wiki;
+	- Criar esqueleto da tese em TeX;
+	- Desenhar arquitectura do sistema;
+	- Rever informação do Miguel Costa.
+	
+Sábado:
+	- Começar processo de elicitação de requisitos;
+	- Criação de ISOs:
+		- Usar informação do Miguel Costa.
+	- Trabalhar nas views.
+
+Domingo:
+	- Métodos de guardar ISOs (indexação).
+		- Mais que duas maneiras/algoritmos?
+	- Trabalhar nas views.
+		
+Segunda:
+	- Métodos para efectuar benchmarks:
+		- Criação;
+		- Listagem;
+		- Retrieval.
+	
+Terça-?:
+	- Escrever tese.
+	

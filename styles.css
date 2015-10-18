@@ -1,0 +1,265 @@
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+
+/* mudar comportamento das boxes */
+* { 
+	-moz-box-sizing: border-box;  
+	box-sizing: border-box;  
+}
+
+
+html {
+background: #e3e3e3;
+font-family: Verdana, Geneva, sans-serif;
+font-size: 14px;
+overflow-y: scroll;
+}
+
+body {
+position:relative;
+height: 100%;
+width: 100%;
+}
+
+#wrapmeup {
+background-color: #fff;
+margin: 50px auto;
+width: 900px;
+/*min-height: 600px;*/
+border: 1px solid #ccc;
+box-shadow: 0 0 5px 5px #aaa;
+padding: 10px;
+overflow: auto;
+}
+
+
+body#about li#aboutnav,
+body#contacts li#contactsnav,
+body#skills li#skillsnav,
+body#projects li#projectsnav {
+color: #fff !important;
+background: #ddd;
+}
+
+body#about li#aboutnav a,
+body#contacts li#contactsnav a,
+body#skills li#skillsnav a,
+body#projects li#projectsnav a {
+color: #000 !important;
+
+
+}
+
+
+
+.header {
+margin: 40px auto;
+margin-bottom: 5px;
+width: 800px;
+
+
+}
+
+.header pic {
+float: left;
+}
+
+.header_text {
+float: right;
+margin-top: 30px;
+}
+
+.header_text p {
+text-align: center;
+}
+
+#main_title{
+text-align: center;
+font-size: 28px;
+font-family: 'Arbutus Slab', serif;
+}
+
+#main_title a {
+text-decoration: none;
+color: #000;
+}
+
+a:visited {
+color: #000;
+}
+
+
+.pic {
+display: inline-block;
+padding: 5px;
+padding-bottom: 3px;
+border: 5px solid #d1d1d1;
+}
+
+
+.wrapper {
+width: 800px;
+margin: 40px auto;
+}
+
+.content {
+width: 609px;
+line-height: 30px;
+text-align: justify;
+padding-left: 15px;
+float: right;
+border-left: 1px solid #ddd;
+
+}
+
+.content a{
+text-decoration: none;
+}
+
+.content a:hover {
+text-decoration: underline;
+}
+
+
+.contacts li {
+list-style: none;
+
+}
+
+.options {
+width: 191px;
+float: left;
+line-height: 25px;
+
+
+}
+
+.options_list {
+list-style: none;
+margin: 0;
+padding:0;
+}
+
+.options_list li {
+padding-left: 15px;
+}
+
+.options_list li a {
+text-decoration: none;
+color: #000;
+}
+
+.options_list li a:visited {
+text-decoration: none;
+color: #000;
+}
+
+.options_list li a:hover {
+text-decoration: underline;
+}
+
+.projects_list {
+padding: 0;
+margin-top: 15px;
+line-height: 25px;
+border-top: 2px soldi
+}
+
+.projects_list > li {
+list-style: none;
+display: block;
+float: left;
+width: 100%;
+height: 100%;
+border-top: 2px dashed #A3A3A3;
+padding: 15px;
+}
+
+.projects_list > li:nth-child(odd) {
+	/*background: #DBDBDB;*/
+}
+
+.projects_list > li:nth-child(even) {
+	background: #fff;
+}
+
+.projects_list > li:last-child {
+
+}
+
+.projects_list ul {
+	list-style: none;
+}
+
+#areas {
+	text-align: center;
+}
+
+#areas ul {
+	padding-left: 0;
+	margin-top: 0;
+}
+
+#areas li, .skills li {
+	list-style: none;
+}
+
+.skills {
+	margin-top: 25px;
+	float: left;
+}
+
+.wrap_skills {
+	width: 600px;
+	text-align: center;
+}
+
+.wrap_skills ul {
+	padding-left: 0;
+}
+
+.wrap_skills > :nth-child(odd) {
+
+	width: 300px;
+}
+
+.wrap_skills > :nth-child(even) {
+	width: 300px;
+	border-left: 1px solid #ddd;
+}
+.double {
+  overflow:hidden;
+}
+.languages li, .double li{
+  float:left;
+  display:inline;
+}
+
+.double li  { 
+	width:50%;
+} /* 2 col */
+
