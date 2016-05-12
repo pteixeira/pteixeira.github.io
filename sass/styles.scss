@@ -1,0 +1,327 @@
+@import 'normalize';
+
+// Box Model
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.hide {
+  display: none;
+}
+
+// Small
+@media screen and (max-width: 450px) {
+  .header {
+    height: 100px;
+    padding: 0 15px;
+    font-size: 90%;
+  }
+}
+
+// Medium
+@media screen and (min-width: 451px) and (max-width: 979px) {
+  .header {
+    height: 100px;
+    padding: 0 50px;
+    // font-size: 25px;
+  }
+}
+
+// Large
+@media screen and (min-width: 787px) {
+  .header {
+    height: 100px;
+    padding: 0 25px;
+    font-size: 150%;
+  }
+
+  .skills {
+    h4 {
+      font-size: 250% !important;
+      padding: 0 !important
+    }
+  }
+}
+
+body {
+  background: #34495E;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: "Lato", sans-serif;
+
+  a, a:hover, a:visited, a:focus {
+    color: black;
+  }
+
+  ul {
+    list-style: none;
+  }
+}
+
+.content {
+  min-height: 100%;
+  padding-bottom: 150px; // size of footer
+  position: relative;
+  font-size: 125%;
+}
+
+.content-item {
+  color: white;
+  margin: 0 auto;
+  width: 75%;
+  padding: 0 20px 20px;
+
+  h4 {
+    text-align: center;
+    padding: 0 15px;
+    margin: 0 auto;
+    font-size: 300%;
+    font-weight: 100;
+  }
+
+  .content-item-content {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.header {
+  color: white;
+  display: flex;
+  width: 100%;
+  text-align: center;
+
+  .header-text {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    width: 25%;
+    line-height: 1.6;
+  }
+
+  .header-menu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 75%;
+    & > div:not(:first-of-type) {
+      margin-left: 15px;
+    }
+  }
+}
+
+.footer {
+  background: #344352;
+  position: absolute;
+  // border-top: 1px solid #333c46;
+  left: 0;
+  bottom: 0;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.skills {
+  margin-top: 15px;
+  ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px 25px;
+    line-height: 1.6;
+  }
+
+  .tech,
+  .new-tech {
+    background: rgba(255,255,255,0.15);
+  }
+
+  .tech,
+  .new-tech {
+    margin: 0 30px;
+    font-size: 80%;
+
+    div:last-of-type {
+      margin-bottom: 15px;
+      font-size: 75%;
+      color:#e8e8e8;
+    }
+  }
+
+  .tech-prof {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .tech-top,
+  .tech-bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .new-tech {
+    display: flex;
+  }
+
+  p {
+    text-align: center;
+  }
+}
+
+.about-me {
+  height: 350px;
+  background: url("../assets/images/porto-overview.jpg") no-repeat center center;
+  background-size: cover;
+  color: white;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  h1 {
+    padding: 15px;
+    margin: 0 0 30px;
+    text-align: center;
+    font-weight: 300;
+  }
+
+  img {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 2px solid white;
+  }
+
+  .about-me-content {
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+
+    .about-me-text {
+      margin-right: 50px;
+      max-height: 300px;
+      max-width: 600px;
+      padding: 15px;
+      line-height: 1.6;
+      background: rgba(0,0,0,0.65);
+    }
+  }
+}
+
+// .experience {
+//   flex-direction: column;
+
+//   .experience-item {
+//     font-size: 125%;
+
+//     .experience-item-title {
+//       margin: 15px 0;
+//       text-align: center;
+//       font-size: 150%;
+//       font-weight: 300;
+//     }
+
+//     .experience-item-intro,
+//     .experience-item-outro {
+//       margin: 0 auto;
+//       max-width: 650px;
+//       line-height: 1.7;
+//     }
+
+//     .experience-item-content {
+//       display: flex;
+//       justify-content: space-around;
+//       margin: 35px 0 15px;
+
+//       .focis,
+//       .apis {
+//         width: 45%;
+//       }
+//     }
+
+//     .focis-title, .apis-title {
+//       font-weight: bold;
+//       text-align: center;
+//       margin-bottom: 20px;
+
+//       span {
+//         font-weight: normal;
+//         color: rgba(0,0,0,0.65);
+//       }
+//     }
+//   }
+
+//   .tech {
+//     margin-top: 30px;
+
+//     .experience-item-tech {
+//       margin: 10px 0 15px;
+//       text-align: center;
+
+//       span {
+//         &:not(:first-of-type),
+//         &:not(:last-of-type) {
+//           margin: 0 5px;
+//         }
+
+//         word-break: break-word;
+//         max-width: 30%;
+//       }
+
+//       img {
+//         width: 50px;
+//         height: 50px;
+//         border-radius: 10px;
+//         border: 1px solid black;
+//       }
+//     }
+//   }
+// }
+
+// .projects {
+//   width: 60%;
+//   margin: 0 auto;
+//   font-size: 125%;
+//   line-height: 1.6;
+// }
+
+.contacts {
+  ul {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+
+  li {
+    a {
+      font-size: 75px;
+      padding: 15px;
+    }
+
+
+    // &:hover a {
+    //   background: rgb(60,60,60);
+    //   color: #333c46;
+    //   border-radius: 50%;
+    //   transition: background 0.5s ease;
+    // }
+
+    i {
+      color: white;
+    }
+  }
+}
+
+

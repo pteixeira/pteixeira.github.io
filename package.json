@@ -1,0 +1,32 @@
+{
+  "name": "pteixeira.github.io",
+  "version": "1.0.0",
+  "description": "Pedro Teixeira",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pteixeira/pteixeira.github.io.git"
+  },
+  "keywords": [
+    "homepage",
+    "portfolio",
+    "showcase"
+  ],
+  "author": "Pedro Teixeira",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pteixeira/pteixeira.github.io/issues"
+  },
+  "homepage": "https://github.com/pteixeira/pteixeira.github.io#readme",
+  "devDependencies": {
+    "babel-core": "^6.5.2",
+    "babel-preset-es2015": "^6.5.0",
+    "browser-sync": "^2.11.1",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-sass": "^2.2.0"
+  }
+}

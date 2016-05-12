@@ -2,14 +2,210 @@
 <html lang="en-US">
 <head>
 	<meta charset="UTF-8">
-	<link href="styles.css" rel="stylesheet" type="text/css" />
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-	<link href='https://fonts.googleapis.com/css?family=Arbutus+Slab' rel='stylesheet' type='text/css'>
+	<!-- <link href="styles.css" rel="stylesheet" type="text/css" /> -->
+	<link href="css/styles.css" rel="stylesheet" type="text/css" />
+	<link href="./assets/fontello.css" rel="stylesheet" type="text/css" />
+	<link href="./assets/fontello-codes.css" rel="stylesheet" type="text/css" />
+	<!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> -->
+	<link href='https://fonts.googleapis.com/css?family=Lato:400,300' rel='stylesheet' type='text/css'>
 	<title>Pedro Teixeira</title>
 </head>
-<body id="about">
-<div id="wrapmeup">
-	<div class="header cf">
+<body>
+	<div class="header">
+		<div class="header-text" id="header-text">
+			<script>
+				document.getElementById("header-text").innerHTML = "h: " + h + "<br /> w: " + w;
+			</script>
+			<div>Pedro Teixeira <br /> Software developer</div>
+		</div>
+		<div class="header-menu">
+			<div class="header-menu-item">Professional Experience</div>
+			<div class="header-menu-item">Projects</div>
+			<div class="header-menu-item">Contact Me</div>
+		</div>
+	</div>
+	<div class="content">
+		<div class="about-me">
+			<div class="about-me-content">
+				<div class="about-me-text">
+					My name is Pedro Teixeira and I am a software developer who found joy in the web side of things. <br /> <br />
+					I am 28 years old and I currently live in Porto, Portugal, where I got my M.Sc. in Informatics and Computer Engineering at the Faculty of Engineering of the University of Porto (FEUP).
+				</div>
+				<img src="me.jpg" alt="self portrait" class="about-me-image"/>
+			</div>
+		</div>
+		<div class="content-item skills">
+			<h4 class="content-item-title">
+				What are my tools of the trade?
+			</h4>
+			<div class="content-item-content">
+				<div class="tech-top">
+					<p>I worked professionally with:</p>
+					<div class="tech-prof">
+						<ul class="tech">
+							<li>
+								<div>Porto Tech Center</div>
+								<div>Aug 2014 - Dec 2015</div>
+							</li>
+							<li>PHP (Zend/Yii)</li>
+							<li>HTML</li>
+							<li>CSS (SASS/SCSS)</li>
+							<li>Javascript (jQuery)</li>
+							<li>MySQL</li>
+						</ul>
+						<ul class="tech">
+							<div>Thales Portugal/Altran Portugal</div>
+							<div>Dec 2012 - Aug 2014</div>
+							<li>Java</li>
+							<li>JEE 6</li>
+							<li>PostgreSQL</li>
+							<li>Android SDK</li>
+						</ul>
+					</div>
+				</div>
+				<div class="tech-bottom">
+					<p>Lately I have been working with:</p>
+					<div class="tech-prof">
+						<ul class="new-tech">
+							<li>Javascript</li>
+							<li>ReactJS</li>
+							<li>Redux</li>
+							<li>Stylus</li>
+							<li>Ruby on Rails</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- <div class="content-item experience">
+			<h4 class="content-item-title">
+				What have I been up to?
+			</h4>
+			<div class="content-item-content">
+				<div class="experience-item">
+					<h3 class="experience-item-title">
+						Altran Portugal (2013-2014)
+					</h3>
+					<div class="experience-item-intro">
+						I graduated in 2013 and shortly after I started my first job as a consultant for Altran Portugal, my only client being Thales Portugal. <br />
+						There I worked in two projects: FOCIS and APIS.
+					</div>
+					<div class="experience-item-content">
+						<div class="focis">
+							<div class="focis-title">
+								FOCIS <br />
+								<span>(Ferry Operations and Communications Information System)</span>
+							</div>
+							<div class="experience-item-text">
+								I developed a mobile application prototype that displayed information about the Sydney Ferries water transportation network (Sydney Harbour and Parramatta River). I also developed the server which gathered the necessary information, stored it and passed it to the mobile application.
+							</div>
+							<div class="tech">
+								Technologies used
+								<div class="experience-item-tech">
+									<span>Android SDK</span>
+									<span>JBoss Application Server</span>
+									<span>JEE 6 (mainly EJBs)</span>
+									<span>JSE 6</span>
+									<span>JPA (Hibernate)</span>
+								</div>
+							</div>
+						</div>
+						<div class="apis">
+							<div class="apis-title">
+								APIS <br />
+								<span>(Advanced Passenger Information System)</span>
+							</div>
+							<div class="experience-item-text">
+								A system that gathers information from multiple transit systems and displays that information to the passenger. This information can originate from both local sources and third-party systems and is sent to the displays you can find at train stations with the information about the train system (upcoming trains, possible delays, etc).
+							</div>
+							<div class="tech">
+								Technologies used
+								<div class="experience-item-tech">
+									<span>PostgreSQL</span>
+									<span>JBoss</span>
+									<span>C#</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="experience-item">
+					<h3 class="experience-item-title">
+						Porto Tech Center by Africa Internet Group (2014-2015)
+					</h3>
+					<div class="experience-item-intro">
+						I was with Porto Tech Center from August 2014 up until the end of December 2015. <br />
+						There I worked in the Kaymu project as a web developer, in both backend and frontend. <br />
+						Kaymu is an online marketplace for emerging markets that brings together buyers and sellers to make great deals. <br />
+					</div>
+					<div class="experience-item-content">
+						<div class="tech">
+							Technologies used
+							<div class="experience-item-tech">
+								<span>PHP</span>
+								<span>MySQL</span>
+								<span>JavaScript</span>
+								<span>HTML</span>
+								<span>CSS</span>
+							</div>
+						</div>
+					</div>
+					<div class="experience-item-outro">
+						This is where I discovered that I enjoy working in frontend (I worked in both the desktop and the mobile themes revamps) and that it was something that I would like to do in the long run.
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="content-item projects">
+			<h4 class="content-item-title">
+				What am I up to now?
+			</h4>
+			<div class="content-item-content">
+				<div class="projects-item">
+					Ever since I started working more in the frontend at PTC, I started exploring that world and read some things about ReactJS, which appeared to be the next big thing in the web. <br />
+					As I now had some time and did not want to idle away while looking for a new job, I teamed up with a friend who had a lot more experience in ReactJS than I did and started developing a website for a local craft beer shop.<br />
+					We implemented a simple backend built on Ruby on Rails for beer and tap management, authenticating the requests using JWT.<br />
+					In the frontend we used JavaScript - ReactJS, Redux, ImmutableJS and i18next (for internationalization). <br />
+					The website can be found at:
+					<br />
+					<br />
+					Right now I am looking for a job opportunity in web development.
+				</div>
+			</div>
+		</div> -->
+		<div class="content-item contacts">
+			<h4 class="content-item-title">
+				How can I be reached?
+			</h4>
+			<div class="content-item-content">
+				<ul>
+					<li>
+						<a href="mailto:pedro.ap.teixeira@gmail.com">
+							<i class="icon-mail-alt"></i>
+						</a>
+					</li>
+					<li>
+						<a href="https://pt.linkedin.com/in/pedroapteixeira">
+							<i class="icon-linkedin-squared"></i>
+						</a>
+					</li>
+					<li>
+						<a href="http://www.github.com/pteixeira">
+							<i class="icon-github-squared"></i>
+						</a>
+					</li>
+					<!-- <li><i class="icon-skype"></i>pedroapteixeira</li> -->
+				</ul>
+			</div>
+			<div class="footer">
+				stuff
+			</div>
+		</div>
+	</body>
+	</html>
+<!-- <body id="about">
+	<div id="wrapmeup">
+		<div class="header cf">
 			<div class="pic"><img src="me.png" alt="self portrait"/></div>
 			<div class="header_text">
 				<p id="main_title"><a href="index.html">Pedro Teixeira</a></p>
@@ -22,25 +218,26 @@
 
 		</div>
 
-	<div class="wrapper cf">
-		<div class="options">
-			<ul class="options_list">
-				<li id="aboutnav"><a href="index.html">About me</a></li>
-			</ul>
-		</div>
+		<div class="wrapper cf">
+			<div class="options">
+				<ul class="options_list">
+					<li id="aboutnav"><a href="index.html">About me</a></li>
+				</ul>
+			</div>
 
-		<div class="content">
-			My name is Pedro Adriano Pessoa Teixeira and I am 28 years old. <br/>
-			This page is currently suffering a major revamp, so I can show off some of my newly acquired skills.<br />
-			Hopefully it will be up soon. <br />
-			In the meantime, you can contact me by either:
-			<ul>
-				<li>Sending me an email: pedro<strong>(.)</strong>ap<strong>(.)</strong>teixeira<strong>(at)</strong>gmail.com</li>
-				<li>Adding me on skype: <strong>pedroapteixeira</strong></li>
-				<li>Adding me on LinkedIN: <a href="http://www.linkedin.com/in/pedroapteixeira" target="_blank">pedroapteixeira</a></li>
-			</ul>
+			<div class="content">
+				My name is Pedro Adriano Pessoa Teixeira and I am 28 years old. <br/>
+				This page is currently suffering a major revamp, so I can show off some of my newly acquired skills.<br />
+				Hopefully it will be up soon. <br />
+				In the meantime, you can contact me by either:
+				<ul>
+					<li>Sending me an email: pedro<strong>(.)</strong>ap<strong>(.)</strong>teixeira<strong>(at)</strong>gmail.com</li>
+					<li>Adding me on skype: <strong>pedroapteixeira</strong></li>
+					<li>Adding me on LinkedIN: <a href="http://www.linkedin.com/in/pedroapteixeira" target="_blank">pedroapteixeira</a></li>
+				</ul>
+			</div>
 		</div>
 	</div>
-</div>
 </body>
 </html>
+-->
