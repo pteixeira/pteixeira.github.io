@@ -1,25 +1,46 @@
 body {
   font-family: 'Open Sans', sans-serif;
-}
-
-
-.header-content {
-  width: 60%;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  border: 1px solid;
-}
-
-.personal-picture {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
+  color: #FCFFF5;
+  background-color: #193441;
 }
 
 .profile {
-  width: 250px;
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-name {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 20px 0;
+}
+
+span.name {
+  font-size: 250%;
+  font-weight: 300;
+}
+
+span.title {
+  color: #D1DBBD;
+}
+
+.profile-content {
+  width: 80%;
   margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.personal-picture {
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+}
+
+.bio-text {
+  line-height: 140%;
+  margin-left: 30px;
 }
 
 .footer {
@@ -28,6 +49,5 @@ body {
 }
 .footer img {
   width: 80px;
-  height: 80px;
   margin-left: 20px;
 }
