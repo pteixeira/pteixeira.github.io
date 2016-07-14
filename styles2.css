@@ -1,0 +1,33 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+.header-content {
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  border: 1px solid;
+}
+
+.personal-picture {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.profile {
+  width: 250px;
+  margin: 0 auto;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 20px;
+}
+.footer img {
+  width: 80px;
+  height: 80px;
+  margin-left: 20px;
+}
