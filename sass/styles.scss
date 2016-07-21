@@ -26,7 +26,7 @@ body {
 
 .body-wrapper {
   & > div {
-    margin: 80px auto;
+    margin: 0 auto 80px;
   }
 }
 
@@ -43,7 +43,7 @@ body {
 }
 
 .profile-content {
-  margin: 60px auto 0;
+  margin: 30px auto 0;
   display: flex;
   align-items: center;
 }

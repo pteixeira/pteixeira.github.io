@@ -18,7 +18,7 @@ body {
   display: none; }
 
 .body-wrapper > div {
-  margin: 80px auto; }
+  margin: 0 auto 80px; }
 
 .profile {
   display: flex;
@@ -31,7 +31,7 @@ body {
   margin: 20px 0; }
 
 .profile-content {
-  margin: 60px auto 0;
+  margin: 30px auto 0;
   display: flex;
   align-items: center; }
 
