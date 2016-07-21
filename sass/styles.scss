@@ -1,0 +1,135 @@
+@import '../css/normalize.css';
+@import '../css/fontello.css';
+@import '../css/fontello-codes.css';
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.4rem;
+  color: #FCFFF5;
+  background-color: #193441;
+  display: flex;
+  flex-direction: column;
+
+  ul {
+    list-style: none;
+  }
+
+  a, a:visited, a:hover {
+    color: #FCFFF4;
+    text-decoration: none;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.body-wrapper {
+  & > div {
+    margin: 80px auto;
+  }
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-name {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.profile-content {
+  margin: 60px auto 0;
+  display: flex;
+  align-items: center;
+}
+
+.name {
+  line-height: 100%;
+  font-size: 250%;
+  font-weight: 300;
+}
+
+.title {
+  color: #D1DBBD;
+}
+
+.personal-picture {
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+}
+
+.bio-text {
+  margin-left: 30px;
+}
+
+
+.timeline-item {
+  width: 50%;
+  margin: 0 auto;
+  background: #3E606F;
+  padding: 50px 15px 20px;
+  border-radius: 10px;
+  position: relative;
+  font-size: 90%;
+
+  &:not(.active) {
+    display: none;
+  }
+
+  .item-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(100% - 25px);
+    background-color: rgba(145,170,157,0.85);
+    padding: 10px 10px 10px 15px;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  a {
+    border-bottom: 1px dotted;
+  }
+}
+
+.timeline-bubbles {
+  width: 50%;
+  margin: 15px auto;
+  text-align: center;
+  padding-left: 0;
+
+  .timeline-bubble {
+    margin: 0 20px;
+    display: inline-block;
+    cursor: pointer;
+    color: #FCFFF5;
+
+    &.active {
+      color: #91AA9D;
+      // border-radius: 50%;
+    }
+  }
+}
+
+.footer {
+  text-align: center;
+  margin-bottom: 50px;
+
+  a {
+    font-size: 350%;
+    margin: 0 15px;
+    padding: 5px;
+
+    &:hover {
+      background-color: gray !important;
+      border-radius: 50%;
+    }
+  }
+}
