@@ -2,6 +2,28 @@
 @import '../css/fontello.css';
 @import '../css/fontello-codes.css';
 
+@media screen and (max-width: 749px) {
+  .profile-content {
+    flex-direction: column;
+
+    .bio-text {
+      margin-top: 20px;
+      margin-left: 0;
+      text-align: center;
+    }
+  }
+
+  .timeline-item {
+    width: 65%;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .timeline-item {
+    width: 555px;
+  }
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
   line-height: 1.4rem;
@@ -70,7 +92,6 @@ body {
 
 
 .timeline-item {
-  width: 65%;
   margin: 0 auto;
   background: #3E606F;
   padding: 50px 15px 20px;
