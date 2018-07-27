@@ -58,8 +58,9 @@ body {
   color: #D1DBBD; }
 
 .personal-picture {
-  width: 125px;
+  width: 105px;
   height: 125px;
+  object-fit: scale-down;
   border-radius: 50%; }
 
 .bio-text {
